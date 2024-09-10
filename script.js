@@ -68,7 +68,7 @@ function validateMessage(){
     messageError.innerHTML = 'Kindly input a message';
     return false;
   }
-  if (remainChar !== 0){
+  if (remainChar > 0){
     messageError.innerHTML = `${remainChar} Characters remaining`;
     return false;
   }
